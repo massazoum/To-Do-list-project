@@ -1,60 +1,31 @@
-// const path = require('path');
-
-//  module.exports = {
-//   mode: 'development',
-//    entry: './src/index.js',
-
-//    output: {
-//      filename: 'bundle.js',
-//      path: path.resolve(__dirname, 'dist'),
-//    },
-//   module: {
-//     rules: [
-//       {
-//         test: /\.css$/i,
-//         use: ['style-loader', 'css-loader'],
-//       },
-      
-//     ],
-//   },
-//   devServer: {
-//     static: './dist',
-//   }, 
-//   optimization: {
-//     runtimeChunk: 'single',
-//   },
-//  };
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+ mode: 'production',
   entry: './src/index.js',
+  plugins: [
+   new HtmlWebpackPlugin({
+    title: 'Output Management',
+    template: './src/index.html',
+   }),
+ ],
+ devServer: {
+  static: './dist',
+},
   output: {
-    filename: '[name].[contenthash].js',
+    filename: 'build/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
   module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
-  devServer: {
-    static: './dist',
-  },
-  optimization: {
-    runtimeChunk: 'single',
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
-  },
+   rules: [
+     {
+       test: /\.css$/i,
+       use: ['style-loader', 'css-loader'],
+     },
+   ],
+ },
+ optimization: {
+  runtimeChunk: 'single',
+},
 };
