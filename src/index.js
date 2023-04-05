@@ -9,25 +9,44 @@ const tasks = [
   { description: "Call mom", completed: false, index: 4 }
 ];
 
-console.log(tasks);
+// console.log(tasks);
 
-function renderTasks() {
+// function renderTasks() {
+//   const taskList = document.getElementById("task-list");
+//   const container =document.querySelector('.container')
+//   // Clear any existing tasks
+//   taskList.innerHTML = "";
+  
+//   // Render each task as a list item
+//   tasks.forEach(task => {
+//     const listItem = document.createElement("li");
+//     listItem.innerHTML =`<div class="divli"><div><input type="checkbox" id="my-checkbox" name="my-checkbox" />
+//     <label for="demoCheckbox"> ${task.description}</div>  <i class="fas fa-ellipsis-v" id='fas'></i>
+//     </div>`  
+//     taskList.appendChild(listItem);
+//   });
+//   container.style.diplay='block';
+// }
+const renderTasks = () => {
   const taskList = document.getElementById("task-list");
-  const container =document.querySelector('.container')
+  const container = document.querySelector('.container');
+
   // Clear any existing tasks
   taskList.innerHTML = "";
-  
+
   // Render each task as a list item
   tasks.forEach(task => {
     const listItem = document.createElement("li");
-    listItem.innerHTML =`<div class="divli"><div><input type="checkbox" id="my-checkbox" name="my-checkbox" />
+    listItem.innerHTML = `<div class="divli"><div><input type="checkbox" id="my-checkbox" name="my-checkbox" />
     <label for="demoCheckbox"> ${task.description}</div>  <i class="fas fa-ellipsis-v" id='fas'></i>
-    </div>`  
+    </div>`
     taskList.appendChild(listItem);
   });
-  container.style.diplay='block';
-}
 
-window.onload = function() {
+  container.style.display = 'block';
+};
+
+
+window.onload = ()=> {
   renderTasks();
 }
