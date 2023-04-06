@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
-import Task from './Task.js';
-import Storage from './Storage.js';
-import Renderer from './Renderer.js';
+import Task from './work.js';
+import Storage from './storage0.js';
+import Renderer from './moteur.js';
 
 export default class ToDo {
   constructor() {

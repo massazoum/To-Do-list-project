@@ -2,7 +2,7 @@ import _ from 'lodash';
 
 import './style.css';
 
-import Behaviors from './modules/Behaviors.js';
+import Behaviors from './modules/zoum.js';
 import ToDo from './modules/todo.js';
 // import './style.css';
 
