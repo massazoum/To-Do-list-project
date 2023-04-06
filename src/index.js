@@ -1,15 +1,10 @@
 import _ from 'lodash';
-
 import './style.css';
-
 import Behaviors from './modules/zoum.js';
 import ToDo from './modules/todo.js';
-// import './style.css';
 
-// eslint-disable-next-line no-new
 new ToDo(); // calling ToDo
 
-// Functionalities behaviors
 const input = document.querySelector('#input');
 const reload = document.querySelector('#reload');
 const clear = document.querySelector('#btn-clear');

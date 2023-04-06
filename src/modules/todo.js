@@ -1,4 +1,3 @@
-/* eslint-disable import/no-cycle */
 import Task from './work.js';
 import Storage from './storage0.js';
 import Renderer from './moteur.js';

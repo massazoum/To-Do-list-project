@@ -1,4 +1,3 @@
-/* eslint-disable import/no-cycle */
 import Behaviors from './zoum.js';
 import Storage from './storage0.js';
 
