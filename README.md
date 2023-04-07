@@ -108,19 +108,13 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
-
-Deployed in `Github Pages`. [Live Preview](https://massazoum.github.io/To-Do-list-project)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Massa zoumanigui**
 
 - GitHub: [@massazoum](https://github.com/massazoum)
 - Twitter: [@zoumaniguimass1](https://twitter.com/zoumaniguimass1)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/massa-zoumanigui-1aba4525a)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zoumtechmassa/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
