@@ -104,12 +104,13 @@ To run tests, run the following command:
  npm init -y
  npm install webpack webpack-cli --save-dev
 ```
+. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Deployment
 
-Deployed in `Github Pages`. [Live Preview](https://massazoum.github.io/To-Do-list-project/src)
+Deployed in `Github Pages`. [Live Preview](https://massazoum.github.io/To-Do-list-project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
