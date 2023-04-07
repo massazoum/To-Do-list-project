@@ -109,7 +109,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-Deployed in `Github Pages`. [Live Preview](https://massazoum.github.io/To-Do-list-project/)
+Deployed in `Github Pages`. [Live Preview](https://massazoum.github.io/To-Do-list-project/src)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
