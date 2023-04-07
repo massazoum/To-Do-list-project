@@ -55,6 +55,6 @@ export default class ToDo {
   }
 
   refresh() {
-    this.syncUpdates(); // storage reset
+    this.syncUpdates(); 
   }
 }
