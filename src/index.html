@@ -8,34 +8,29 @@
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-*********************" crossorigin="anonymous"> 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-BgVjRxTpJn75uI8WllZ+TvnZJl2jCszhUPmqs1yCmE3oq3p/wKjU8WJEXFjwz/JI3pOx+9O4Cr4j4vU4Q6U4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
- <div class="container">
-  <div class="Today"><h1>Today's To Do</h1><i class="fa fa-spinner" aria-hidden="true"></i></div>
-  <form class="form0">
-    
-    <input id="new-item" class="form0" placeholder="Add to your list..." type="text">
-    <button class="bntsubmit0"  id="new-task-button" type="submit" tabindex="-1" value="" title="click this or press enter to submit" class="icon-return"><i class="fa fa-reply" aria-hidden="true"></i></button>
-  </form>
 
-  <ul id="task-list">
-   
 
-  
-  </ul>
-
-<button  class="clear" type="button">Clear all completed</button>
-</div>
+  <div class="container">
+    <div id="test"></div>
+    <nav class="topbar">
+      <h1>Today's To Do</h1>
+      <button id="reload"><i class="ri-refresh-line"></i></button>
+    </nav>
+    <input type="text" id="input" placeholder="Add to your list...">
+    <ul id="list"></ul>
+    <button id="btn-clear">clear all completed</button>
+  </div>
 
 
 
  <script src="index.js"></script>
  <script>
-  window.onload = function() {
-    renderTasks();
-    addNewTaskForm();
-  }
 </script>
 </body>
 </html>

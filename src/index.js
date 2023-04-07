@@ -1,35 +1,36 @@
 import _ from 'lodash';
 import './style.css';
+import Behaviors from './modules/zoum.js';
+import ToDo from './modules/todo.js';
 
-const tasks = [
-  { description: "Clean the house", completed: false, index: 1 },
-  { description: "Buy groceries", completed: true, index: 3 },
-  { description: "Pay bills", completed: false, index: 2 },
-  { description: "Go for a run", completed: true, index: 0 },
-  { description: "Call mom", completed: false, index: 4 }
-];
+new ToDo(); // calling ToDo
 
-const renderTasks = () => {
-  const taskList = document.getElementById("task-list");
-  const container = document.querySelector('.container');
-  tasks.sort((a, b) => a.index- b.index);
+const input = document.querySelector('#input');
+const reload = document.querySelector('#reload');
+const clear = document.querySelector('#btn-clear');
 
-  // Clear any existing tasks
-  taskList.innerHTML = "";
-
-  // Render each task as a list item
-  tasks.forEach(task => {
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `<div class="divli"><div><input type="checkbox" id="my-checkbox" name="my-checkbox" />
-    <label for="demoCheckbox"> ${task.description}</div>  <i class="fas fa-ellipsis-v" id='fas'></i>
-    </div>`
-    taskList.appendChild(listItem);
-  });
-
-  container.style.display = 'block';
+const insertTask = (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    Behaviors.insert(event);
+  }
 };
 
+const clearAllCompleted = () => Behaviors.clearCompleted();
 
-window.onload = ()=> {
-  renderTasks();
-}
+const reloadList = () => {
+  document.querySelector('#list').innerHTML = '<li>Reloading...</li>';
+  reload.classList.add('spin');
+  setTimeout(() => {
+    Behaviors.reload();
+    reload.classList.remove('spin');
+  }, 1500);
+};
+
+// after page loads
+document.addEventListener('DOMContentLoaded', () => {
+  // event bindings
+  reload.addEventListener('click', reloadList);
+  input.addEventListener('keypress', insertTask);
+  clear.addEventListener('click', clearAllCompleted);
+});
