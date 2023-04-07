@@ -15,7 +15,6 @@ const insertTask = (event) => {
     Behaviors.insert(event);
   }
 };
-
 const clearAllCompleted = () => Behaviors.clearCompleted();
 
 const reloadList = () => {
