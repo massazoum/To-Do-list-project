@@ -1,4 +1,4 @@
-#
+
 <a name="readme-top"></a>
 
 <div align="center">
@@ -104,6 +104,7 @@ To run tests, run the following command:
  npm init -y
  npm install webpack webpack-cli --save-dev
 ```
+. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +114,7 @@ To run tests, run the following command:
 
 - GitHub: [@massazoum](https://github.com/massazoum)
 - Twitter: [@zoumaniguimass1](https://twitter.com/zoumaniguimass1)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/massa-zoumanigui-1aba4525a)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zoumtechmassa/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
