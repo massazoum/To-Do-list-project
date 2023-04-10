@@ -107,10 +107,11 @@ To run tests, run the following command:
 . Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Deployment
 
   The changes will be deployed to the website through our standard deployment process.
-- [PortFolio](https://massazoum.github.io/To-Do-list-project/dist)
+- [ To-Do-list](https://massazoum.github.io/To-Do-list-project/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
