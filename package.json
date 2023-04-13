@@ -1,43 +1,56 @@
 {
-  "name": "to-do-list-project",
+  "name": "todo",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "todo-list-app",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "webpack",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "watch": "webpack --watch",
+    "server": "node server.js",
+    "lint": "npm run lint:html; npm run lint:js; npm run lint:css;",
+    "lint:html": "npx hint .",
+    "lint:js": "npx eslint .",
+    "lint:css": "npx stylelint '**/*.{css,scss}'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/massazoum/To-Do-list-project.git"
+    "url": "git@github.com:mahabubx7/todo-list.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/massazoum/To-Do-list-project/issues"
+  "engines": {
+    "node": "16.x"
   },
-  "homepage": "https://github.com/massazoum/To-Do-list-project#readme",
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
+  }
+,  
+  "author": "Mahabub <mahabubx7@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.76.3"
+  },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "@testing-library/dom": "^9.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^14.4.3",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
-    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
-    "hint": "^7.1.8",
+    "hint": "^7.1.5",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "style-loader": "^3.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
-    "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.2"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
-  "main": "webpack.config.js"
+    "webpack-dev-server": "^4.13.1"
+  }
 }
