@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mahabubx7/todo-list.git"
+    "url": "https://github.com/massazoum/capstone-project-1/issues"
   },
   "engines": {
     "node": "16.x"
@@ -27,7 +27,7 @@
     "testEnvironment": "jest-environment-jsdom"
   }
 ,  
-  "author": "Mahabub <mahabubx7@gmail.com>",
+  "author": "massazoum",
   "license": "MIT",
   "dependencies": {
     "webpack": "^5.76.3"
