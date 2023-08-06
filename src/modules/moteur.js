@@ -25,7 +25,8 @@ export default class Renderer {
         <input type="checkbox" ${it.completed ? 'checked' : ''}>
         <span class="${it.completed ? 'completed' : ''}">${it.description}</span>
         <button class="option"><i class="ri-more-2-fill"></i></button>
-        <button class="btn-delete hidden" data-index="${it.index}"><i class="ri-delete-bin-line"></i></button>
+        <button class="btn-delete hidden" data-index="${it.index}"><i class="fas fa-trash-alt custom-icon"></i>
+        </button>
         `;
         item.addEventListener('change', (event) => Behaviors.toggle(event));
         item.addEventListener('dblclick', () => {
